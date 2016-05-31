@@ -23,11 +23,11 @@ namespace CSharpLearning02
             
         }
 
-        public string Mytext()
+        public void Mytext(string text)
         {
-            return textBox1.Text;
+             textBox1.Text = text;
         }
     }
 
-    public delegate string getText();
+    public delegate void getText(string text);
 }
