@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning01", "CSharpLearning01\CSharpLearning01.csproj", "{A9A645CC-EF8E-4899-93E5-926A7E660042}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning02", "CSharpLearning02\CSharpLearning02.csproj", "{2E0FD162-B958-4909-89B2-F107FE942D8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning03", "CSharpLearning03\CSharpLearning03.csproj", "{8619E45A-1DF3-410B-AD48-5758D88C8F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A9A645CC-EF8E-4899-93E5-926A7E660042}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9A645CC-EF8E-4899-93E5-926A7E660042}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9A645CC-EF8E-4899-93E5-926A7E660042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E0FD162-B958-4909-89B2-F107FE942D8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E0FD162-B958-4909-89B2-F107FE942D8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E0FD162-B958-4909-89B2-F107FE942D8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E0FD162-B958-4909-89B2-F107FE942D8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

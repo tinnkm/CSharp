@@ -42,7 +42,7 @@
             this.filetree.Name = "filetree";
             this.filetree.Size = new System.Drawing.Size(195, 338);
             this.filetree.TabIndex = 0;
-            this.filetree.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.filetree_AfterSelect);
+          
             // 
             // open
             // 
