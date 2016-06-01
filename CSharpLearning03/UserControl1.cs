@@ -18,11 +18,14 @@ namespace CSharpLearning03
             InitializeComponent();
         }
 
+        public event Action<object, LoginModel> Login;
         private void login_Click(object sender, EventArgs e)
         {
-            Login my =   new Login(loginAction);
-            bool flag = my(textBox1.Text,textBox2.Text);
-            if (flag)
+            LoginModel loginModel = new LoginModel();
+            loginModel.UserName = textBox1.Text;
+            loginModel.Password = textBox2.Text;
+            Login(this, loginModel);
+            if (loginModel.IsLogin)
             {
                 MessageBox.Show("登录成功！");
             }
@@ -32,17 +35,8 @@ namespace CSharpLearning03
             }
         }
 
-        private bool loginAction(string userName, string password)
-        {
-            if (userName == "tinnkm" && password == "tinnkm")
-            {
-                
-                return true;
-            }
-            return false;
-        }
-
     }
 
-    public delegate bool Login(string name,string password);
+    
+ 
 }

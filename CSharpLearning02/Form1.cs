@@ -19,7 +19,8 @@ namespace CSharpLearning02
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            Form2 form2 = new Form2(textBox1.Text,Mytext);
+            form2.Show();
             
         }
 

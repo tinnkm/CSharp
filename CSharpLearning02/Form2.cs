@@ -12,16 +12,24 @@ namespace CSharpLearning02
 {
     public partial class Form2 : Form
     {
-        protected string MyText;
-        public Form2(string text)
+        public Form2()
         {
-            MyText = text;
+        
             InitializeComponent();
+        }
+
+        private getText get;
+
+        public Form2(string text,getText get):this()
+        {
+            textBox1.Text = text;
+            this.get = get;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = MyText;
+            get(textBox1.Text);
+            this.Close();
         }
     }
 }

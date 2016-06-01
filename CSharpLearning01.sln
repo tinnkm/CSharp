@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning02", "CSharpL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning03", "CSharpLearning03\CSharpLearning03.csproj", "{8619E45A-1DF3-410B-AD48-5758D88C8F65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpLearning04", "CSharpLearning04\CSharpLearning04.csproj", "{BA708B9F-0385-4EE0-8DAE-7B2C2EA0189A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8619E45A-1DF3-410B-AD48-5758D88C8F65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA708B9F-0385-4EE0-8DAE-7B2C2EA0189A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA708B9F-0385-4EE0-8DAE-7B2C2EA0189A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA708B9F-0385-4EE0-8DAE-7B2C2EA0189A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA708B9F-0385-4EE0-8DAE-7B2C2EA0189A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

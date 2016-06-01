@@ -24,19 +24,18 @@ namespace CSharpLearning01
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = folderBrowserDialog1.SelectedPath;
-                TreeNode subnode = filetree.Nodes.Add(textBox1.Text.Substring(textBox1.Text.LastIndexOf(@"\") + 1));
-                GetTree(subnode, textBox1.Text);
+                GetTree(filetree.Nodes, textBox1.Text);
             }
         }
 
-        private void GetTree(TreeNode nodes,string locattion)
+        private void GetTree(TreeNodeCollection nodes,string locattion)
         {
             string[] directorys = Directory.GetDirectories(locattion);
             if (directorys.Length > 0) { 
                 foreach (var dir in directorys)
                 {
-                    TreeNode subnode = nodes.Nodes.Add(dir.Substring(dir.LastIndexOf(@"\") + 1));
-                    GetTree(subnode, dir);
+                    TreeNode subnode = nodes.Add(Path.GetFileName(dir));
+                    GetTree(subnode.Nodes, dir);
                 }
             }
             
@@ -44,8 +43,18 @@ namespace CSharpLearning01
             if (files.Length > 0) { 
                 foreach (var file in files)
                 {
-                    nodes.Nodes.Add(file.Substring(file.LastIndexOf(@"\") + 1));
+                    nodes.Add(Path.GetFileName(file));
                 }
+            }
+        }
+
+        private void ShowInfo(object sender, EventArgs e)
+        {
+            string path = filetree.SelectedNode.FullPath;
+            if (path.EndsWith("txt"))
+            {
+                string filepath = Path.Combine(textBox1.Text, path);
+                showdetail.Text = File.ReadAllText(filepath);
             }
         }
 
